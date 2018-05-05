@@ -1,0 +1,59 @@
+
+<div *ngIf="enabled" class="row">
+    <div class="col-xs-11 col-sm-11 col-lg-11"></div>
+    <div class="col-xs-1 col-sm-1 col-lg-1">
+        <a routerLink="/" routerLinkActive="active" (click)="gotoHome()">Home</a>
+    </div>
+</div>
+
+<app-wish-list *ngIf="enabled" [parentData]="wishlist"></app-wish-list>
+
+<div class="row">
+    <div class="col-xs-11 col-sm-11 col-lg-11"></div>
+    <div class="col-xs-1 col-sm-1 col-lg-1">
+        <a *ngIf="!enabled" routerLink="/wishlist" routerLinkActive="active" (click)="wishlistEnable()">WishList</a>
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+<div *ngIf="!enabled">
+<div class="row">
+  <div class="col-xs-3 col-sm-3 col-lg-3">
+    <img src="../../../assets/images/Ball.jpg" alt="Ball">
+    <button (click)="add('Ball')"><i class="fa fa-plus"></i> Add to wishlist</button>
+  </div>
+  <div class="col-xs-3 col-sm-3 col-lg-3">
+    <img src="../../../assets/images/Bat.jpg" alt="Bat">
+    <button (click)="add('Bat')"><i class="fa fa-plus"></i> Add to wishlist</button>
+  </div>
+  <div class="col-xs-3 col-sm-3 col-lg-3">
+    <img src="../../../assets/images/BodyBoard.jpg" alt="BodyBoard">
+    <button (click)="add('BodyBoard')"><i class="fa fa-plus"> </i> Add to wishlist</button>
+  </div>
+  <div class="col-xs-3 col-sm-3 col-lg-3">
+    <img src="../../../assets/images/Bucket.jpg" alt="Bucket">
+    <button (click)="add('Bucket')"><i class="fa fa-plus"> </i> Add to wishlist</button>
+  </div>
+</div>
+
+<div class="row">
+  <div></div>
+</div>
+<div class="row">
+  <div class="col-xs-3 col-sm-3 col-lg-3">
+    <img src="../../../assets/images/Salami.jpg" alt="Salami">
+    <button (click)="add('Salami')"><i class="fa fa-plus"> </i> Add to wishlist</button>
+  </div>
+  <div class="col-xs-3 col-sm-3 col-lg-3">
+    <img src="../../../assets/images/Proscuetto.jpg" alt="Proscuetto">
+    <button (click)="add('Proscuetto')"><i class="fa fa-plus"> </i> Add to wishlist</button>
+  </div>
+  <div class="col-xs-3 col-sm-3 col-lg-3">
+    <img src="../../../assets/images/Ham.jpg" alt="Ham">
+    <button (click)="add('Ham')"><i class="fa fa-plus"> </i> Add to wishlist</button>
+  </div>
+  <div class="col-xs-3 col-sm-3 col-lg-3">
+    <img src="../../../assets/images/Steak.jpg" alt="Steak">
+    <button (click)="add('Steak')"><i class="fa fa-plus"> </i> Add to wishlist</button>
+  </div>
+</div></div>

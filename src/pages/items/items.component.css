@@ -1,0 +1,22 @@
+img {
+  height: 220px !important;
+  width: 245px !important;
+  vertical-align: 0% !important; 
+  margin-bottom: 15px !important;
+  margin-top: 5px !important;
+  border-radius: 4px;
+}
+a {
+  font-size: 20px;
+  margin-bottom: 10px !important;
+  color: rgba(0, 0, 255, 0.719);
+
+}
+button {
+  margin-bottom: 20px !important;
+  margin-left: 40px !important;
+  color: rgb(30, 114, 139);
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 12px 20px;
+}
